@@ -4,7 +4,6 @@ export class Content {
 
 
     get value(): string {
-
         return this.content;
     }
 
@@ -13,11 +12,11 @@ export class Content {
 
     }
 
-    constructor(content: string){
+    constructor(content: string) {
         const isContentLengthValid = this.validateContentLength(content);
-        
-        if (this.validateContentLength(content)){
-            throw new Error('Content length error.');
+
+        if (!isContentLengthValid) {
+            throw new Error('Content lenght error.');
         }
 
         this.content = content;

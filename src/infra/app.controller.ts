@@ -22,7 +22,7 @@ export class AppController {
     await this.prisma.notification.create({
       data: {
         id: randomUUID(),
-        content: 'Nova notificacao',
+        content: 'Nova notificacao teste teste teste',
         category: 'social',
         recepientId: randomUUID(),
       },
