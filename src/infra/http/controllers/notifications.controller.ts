@@ -1,3 +1,4 @@
+import { NotificationViewModel } from './../view-models/notification-view-model';
 import { SendNotification } from './../../../application/use-cases/send-notifications';
 import { CreateNotificationBody } from '../dtos/create-notification-body';
 import { PrismaService } from '../../database/prisma/prisma.service';
@@ -20,7 +21,8 @@ export class NotificationsController {
       category
     });
 
-    return { notification };
+    return { notification: NotificationViewModel.toHTTP(notification),
+   };
 
   }
 }
