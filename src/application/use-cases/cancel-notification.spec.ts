@@ -1,11 +1,11 @@
-import { makeNotification } from './../../../../test/factories/notification-factory';
-import { NotificationNotFound } from './notification-not-found';
-import { Notification } from '../../entities/notification';
-import { InMemoryNotificationsRepository } from './../../../../test/repositories/in-memory-notifications-repository';
-import { CancelNotification } from './../cancel-notification';
+import { makeNotification } from '../../../test/factories/notification-factory';
+import { NotificationNotFound } from './errors/notification-not-found';
+import { Notification } from '../entities/notification';
+import { InMemoryNotificationsRepository } from '../../../test/repositories/in-memory-notifications-repository';
+import { CancelNotification } from './cancel-notification';
 
 
-import { Content } from './../../entities/content';
+import { Content } from '../entities/content';
 
 
 describe('cancel notification', () => {

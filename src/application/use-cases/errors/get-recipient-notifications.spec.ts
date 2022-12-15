@@ -1,6 +1,6 @@
 import { InMemoryNotificationsRepository } from './../../../../test/repositories/in-memory-notifications-repository';
 import { makeNotification } from './../../../../test/factories/notification-factory';
-import { GettRecipientNotifications } from './get-recipient-notifications';
+import { GettRecipientNotifications } from '../get-recipient-notifications';
 
 
 
