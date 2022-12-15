@@ -2,7 +2,7 @@ import { Content } from './content';
 import { Replace } from "src/helpers/Replace";
 
 export interface NotificationProps {
-    recepientId: string;
+    recipientId: string;
     content: Content;
     category: string;
     readAt?: Date | null;
@@ -22,12 +22,12 @@ export class Notification {
 
     // GETTERS and SETTERS
 
-    public set recepientId(recepientId: string) {
-        this.props.recepientId = recepientId;
+    public set recipientId(recipientId: string) {
+        this.props.recipientId = recipientId;
     }
 
-    public get recepientId(): string {
-        return this.props.recepientId;
+    public get recipientId(): string {
+        return this.props.recipientId;
     }
 
 

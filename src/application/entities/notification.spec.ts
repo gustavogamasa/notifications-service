@@ -10,7 +10,7 @@ describe('Notification', () => {
 
             content: new Content('Você recebeu uma nova notificação'),
             category: 'social',
-            recepientId: 'example-recepientId'
+            recipientId: 'example-recipientId'
             
         });
     

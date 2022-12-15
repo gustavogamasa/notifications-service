@@ -9,11 +9,11 @@ datasource db {
 
 model Notification {
   id          String    @id
-  recepientId String
+  recipientId String
   content     String
   category    String
   readAt      DateTime?
   createdAt   DateTime  @default(now())
 
-  @@index([recepientId])
+  @@index([recipientId])
 }

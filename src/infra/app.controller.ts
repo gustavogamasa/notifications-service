@@ -16,7 +16,7 @@ export class AppController {
   @Post()
   async create(@Body() body: CreateNotificationBody) {
 
-    const { recepientId, content, category } = body;
+    const { recipientId, content, category } = body;
 
 
     await this.prisma.notification.create({
@@ -24,7 +24,7 @@ export class AppController {
         id: randomUUID(),
         content: 'Nova notificacao teste teste teste',
         category: 'social',
-        recepientId: randomUUID(),
+        recipientId: randomUUID(),
       },
     });
   }
